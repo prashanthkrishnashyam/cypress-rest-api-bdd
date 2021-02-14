@@ -1,0 +1,41 @@
+{
+  "name": "cypress-rest-api-bdd",
+  "version": "1.0.0",
+  "description": "Rest Api testing using cypress.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "RestApi",
+    "Cypress",
+    "BDD",
+    "Cucumber"
+  ],
+  "repository": {
+    "type" : "git",
+    "url" : "git@github.com:prashanthkrishnashyam/cypress-rest-api-bdd.git"
+  },
+  "author": "Prashanth Krishna Shyam",
+  "license": "ISC",
+  "engines": {
+    "node": ">=12.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "cypress/support/step_definitions/",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/reports/json",
+      "filePrefix": ""
+    }
+  },
+  "dependencies": {
+    "@cypress/request": "^2.88.5",
+    "cypress-cucumber-preprocessor": "4.0.1",
+    "fs": "0.0.2",
+    "path": "0.12.7"
+  },
+  "devDependencies": {
+    "cypress": "6.3.0"
+  }
+}
